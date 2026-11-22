@@ -16,7 +16,7 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    return a / b
+    return round(a / b, 2)
 
 
 OPERATIONS = {
