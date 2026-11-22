@@ -7,6 +7,7 @@ A small command-line calculator written in Python, used to practise Git and GitH
 
 - Addition, subtraction, multiplication and division
 - Division by zero raises a clear error message
+- Division results are rounded to 2 decimal places
 
 ## Usage
 

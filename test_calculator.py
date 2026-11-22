@@ -20,6 +20,9 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             divide(1, 0)
 
+    def test_divide_rounds_to_two_places(self):
+        self.assertEqual(divide(10, 3), 3.33)
+
     def test_calculate_unknown_operator(self):
         with self.assertRaises(ValueError):
             calculate(1, "^", 2)
