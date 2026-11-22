@@ -41,7 +41,11 @@ def main(argv):
         print("Operators: " + " ".join(OPERATIONS))
         return 1
     a, op, b = float(argv[1]), argv[2], float(argv[3])
-    print(calculate(a, op, b))
+    try:
+        print(calculate(a, op, b))
+    except (ZeroDivisionError, ValueError) as error:
+        print(f"Error: {error}")
+        return 1
     return 0
 
 
