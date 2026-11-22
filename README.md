@@ -20,3 +20,9 @@ python calculator.py 10 / 4
 ```bash
 python -m unittest -v
 ```
+
+## Git assignment
+
+- [Exact steps taken to create and resolve the merge conflict](MERGE_CONFLICT_STEPS.md)
+- [Reflective note](REFLECTION.md)
+- [Screenshots](screenshots/)
