@@ -16,6 +16,10 @@ class TestCalculator(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(divide(10, 4), 2.5)
 
+    def test_divide_by_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            divide(1, 0)
+
     def test_calculate_unknown_operator(self):
         with self.assertRaises(ValueError):
             calculate(1, "^", 2)
